@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
@@ -24,6 +25,12 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+=======
+  <component name="IdProvider" IDEtalkID="3B6495DEA159258A85948E788A6E09CE" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+>>>>>>> d4eff324be91ddc49c50e6ff80662b8ca9e70759
   <component name="masterDetails">
     <states>
       <state key="GlobalLibrariesConfigurable.UI">
@@ -77,4 +84,7 @@
   </component>
 </project>
 
+<<<<<<< HEAD
+>>>>>>> d4eff324be91ddc49c50e6ff80662b8ca9e70759
+=======
 >>>>>>> d4eff324be91ddc49c50e6ff80662b8ca9e70759
