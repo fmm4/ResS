@@ -16,6 +16,10 @@ class ResidueCollectorListPage extends Page {
             $("input", name: "New ResidueCollector").click()
         }
 
+        def selectResidueCollectorByCNPJ(String cnpj){
+            $("input", name: cnpj).click()
+        }
+
 }
 
 class ResidueCollectorCreatePage extends Page{
@@ -33,6 +37,19 @@ class ResidueCollectorCreatePage extends Page{
 
     def selectCreateCollector(){
         $("input", name: "create").click()
+    }
+}
+
+class ResidueCollectorShowPage extends Page{
+    def titulo = "http://localhost:8070/ResidueCollector/show/1"
+    static url = "ResidueCollector/show/1"
+
+    static at = {
+        title ==~ titulo
+    }
+
+    def selectDeleteResidueCollector(){
+        $("input",name: "Delete").click()
     }
 
 }
