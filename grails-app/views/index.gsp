@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
-		<style type="text/css" media="screen">
+		<title>ResS</title>
+		<type="text/css" media="screen">
+		<style>
 			#status {
 				background-color: #eee;
 				border: .2em solid #fff;
@@ -44,7 +45,10 @@
 				margin: 2em 1em 1.25em 18em;
 			}
 
+
+
 			h2 {
+
 				margin-top: 1em;
 				margin-bottom: 0.3em;
 				font-size: 1em;
@@ -65,12 +69,15 @@
 				margin: 0.25em 0;
 			}
 
+
+
 			@media screen and (max-width: 480px) {
 				#status {
 					display: none;
 				}
 
 				#page-body {
+
 					margin: 0 1em 1em;
 				}
 
@@ -81,42 +88,20 @@
 		</style>
 	</head>
 	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
+
 		<div id="status" role="complementary">
-			<h1>Application Status</h1>
+			<h1>Menu</h1>
 			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
+				<li><g:link controller="ResidueGenerator">Geradores de Residuo</g:link></li>
+				<li><g:link controller="ResidueCollector">Coletores de Residuo</g:link></li>
+				<li><a href="dev.gsp">Desenvolvedores</a></li>
 			</ul>
 		</div>
 		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
-
-			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
-				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
-				</ul>
-			</div>
+			<h1>Bem-vindo ao ResS</h1>
+			<p>O ResS é um sistema feito para auxiliar no gerênciamento e armazenamento de informações relacionadas à coleta de residuos de óleo reusáveis. Inicialmente este sistema
+			têm como foco o campus UFPE, usando geradores como o Restaurante Universitário. Com o ResS você pode criar e manusear pontos de Geradores de Residuo e Coletores,
+			gerar rotas para estes pontos, agendar coletas e ver a produção diária e mensal dos geradores.</p>
 		</div>
 	</body>
 </html>

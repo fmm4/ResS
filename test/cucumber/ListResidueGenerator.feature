@@ -28,11 +28,5 @@ Feature: List of Residue Generator
     Then I am at the Residue Generators List page
     And a list with Residue Generators sorted by average daily meal appears
 
-  @ignore #abandonado, tenho que ver como fazer para apagar os gerador
-  Scenario: no geradorDeResiduo on system
-    Given there are no Residue Generator in the system
-    And I am at the Residue Generator Show page
-    When I click on the List Residue Generators button
-    Then an error message saying there are no stored residue generator should appear
-    And I am at the Create Residue Generator page
+
 #end
